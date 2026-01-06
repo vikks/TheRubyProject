@@ -55,3 +55,23 @@ Ruby CLI development offers specific traits compared to the benchmarks:
 ---
 ### Performance Note
 See [Ecosystem Gaps](ECOSYSTEM_GAPS.md) for details on Startup Time and Binary Distribution.
+
+## 6. Cross-Language Reference
+For Ruby developers looking for inspiration, here is a curated list of the "Gold Standard" CLI frameworks in other languages:
+
+### Python
+*   **[Click](https://click.palletsprojects.com/):** The composable, declarative standard.
+*   **[Typer](https://typer.tiangolo.com/):** *Inspiration:* Uses Python type hints to auto-generate CLI args. **Gap:** Ruby could leverage RBS/Sorbet for a similar "Zero-Config" CLI builder.
+*   **[Rich](https://github.com/Textualize/rich):** Beautiful formatting (Tables, Markdown, Syntax Highlighting). *Comparable to TTY, but more integrated.*
+
+### Go
+*   **[Cobra](https://github.com/spf13/cobra):** The industry standard (Kubernetes, Hugo).
+*   **[Bubble Tea](https://github.com/charmbracelet/bubbletea):** The TUI gold standard (Elm architecture).
+
+### Rust
+*   **[Clap](https://github.com/clap-rs/clap):** High-performance, compile-time argument parsing.
+*   **[Ratatui](https://github.com/ratatui-org/ratatui):** Robust TUI library (formerly tui-rs).
+
+### Node.js
+*   **[Oclif](https://oclif.io/):** The plugin-first framework (Salesforce/Heroku CLI).
+*   **[Ink](https://github.com/vadimdemedes/ink):** Build CLIs using React.
