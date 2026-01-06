@@ -13,9 +13,10 @@ Ruby has a long history of excellent CLI tooling, primarily driven by the needs 
 
 | Feature | Ruby (Thor/TTY) | Go (Cobra/Bubbletea) |
 | :--- | :--- | :--- |
-| **Distribution** | Requires Ruby runtime or complex packing (Tebako). | Compiles to single, static binary. |
-| **Startup Time** | Slower (tens/hundreds of ms). | Instant (sub-10ms). |
 | **Interactivity** | `tty-prompt` is excellent but imperative. | `Bubbletea` offers a declarative "Elm Architecture" for complex TUIs. |
 | **Styling** | `pastel` / ANSI codes. | `Lipgloss` provides a CSS-like styling engine for terminals. |
 
-**Benchmark Note:** For simple CRUD CLIs, Ruby's ease of writing beats Go's verbosity. For complex, persistent TUI dashboards (like `k9s` or `lazygit`), Go's performance and concurrency model are superior.
+---
+
+### Performance & Distribution Note
+Certain performance characteristics (startup time, memory footprint) and distribution models (single-binary compilation) are inherently language-dependent and are out of scope for this specific framework comparison. For efforts to bridge these gaps in Ruby (e.g., single-binary packing), see [Ecosystem Gaps & Proposals](ECOSYSTEM_GAPS.md).
