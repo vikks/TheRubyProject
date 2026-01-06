@@ -10,6 +10,7 @@ This is an area of significant divergence. Ruby has historically focused on the 
 
 ### Native GUI
 *   **[Glimmer](https://github.com/glimmer-dsl-swt):** The most active cross-platform GUI library. Supports SWT (JRuby), LibUI (CRuby), and WebAssembly. It uses a declarative DSL.
+*   **[Tk](https://github.com/ruby/tk):** The direct equivalent to Python's **Tkinter**. Formerly part of the standard library (pre-2.4), now a gem. Useful for legacy apps but less "modern" than Glimmer.
 *   **[Shoes](http://shoesrb.com/):** The classic "tiny" toolkit. Great for teaching, less for production.
 
 ## The "Shadcn" Gap (Web Components)
